@@ -44,7 +44,9 @@ class _GenerateQRCodeState extends State<GenerateQRCode> {
                 height: 10,
               ),
               ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {setState(() {
+                     qrData = urlController.text;
+                  });},
                   child: Text("Generate QR Code"))
             ],
           ),
